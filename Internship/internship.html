@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internship Links</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light gray background color */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* White background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Blue link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Internship Links</h1>
+    <ul id="internship-list">
+        <!-- Internship links will be added dynamically here -->
+    </ul>
+</div>
+
+<script>
+    // Internship data (you can add more links here)
+    const internships = [
+        { name: "Axapta: Software Developer",  url: "https://careers.axaptamasters.com/jobs/masters-101-internship-program-software-developer-3/" },
+        { name: "Axapta: Data Analyst", url: "https://careers.axaptamasters.com/jobs/masters-101-internship-program-data-analyst/" },
+        { name: "EMIT KNOWLEDGE", url: "https://emitknowledge.com/internship-program/" },
+        { name: "IT LABS", url: "https://www.it-labs.com/it-labs-internship-a-successful-round-up-of-the-latest-program/" },
+        { name: "CODECHEM", url: "https://openday.codechem.com/" },
+        { name: "INFINUM", url: " https://infinum.com/careers/" }
+    ];
+
+    // Function to display internship links
+    function displayInternships() {
+        const list = document.getElementById("internship-list");
+        internships.forEach(internship => {
+            const listItem = document.createElement("li");
+            const link = document.createElement("a");
+            link.textContent = internship.name;
+            link.href = internship.url;
+            listItem.appendChild(link);
+            list.appendChild(listItem);
+        });
+    }
+
+    // Call the function to display internships
+    displayInternships();
+</script>
+</body>
+</html>
