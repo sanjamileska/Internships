@@ -1,3 +1,3 @@
 # Internships
 
-Simple app for diplaying internships links.
+Simple app for displaying internships links.
